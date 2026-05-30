@@ -1,5 +1,5 @@
 
-# LANOS Internals - Sprint 1
+# LANOS Internals
 
 ## Project Overview
 
