@@ -3,7 +3,6 @@ package com.lanos.organization_service.department.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lanos.organization_service.department.dto.DepartmentRequestDto;
@@ -17,10 +16,10 @@ import com.lanos.organization_service.repository.OrganizationRepository;
 @Service
 public class DepartmentServiceImple implements DepartmentServiceInterface{
 
-	@Autowired
-	public DepartmentRepository departmentRepository;
-	@Autowired
-	public OrganizationRepository organizationRepository;
+	
+	public final DepartmentRepository departmentRepository;
+	
+	public final OrganizationRepository organizationRepository;
 	
 	public DepartmentServiceImple(DepartmentRepository departmentRepository, OrganizationRepository organizationRepository) {
 		this.departmentRepository = departmentRepository;
